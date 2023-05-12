@@ -1,5 +1,5 @@
 FROM golang:alpine as build-env
-LABEL maintainer="daniel@widerin.net"
+LABEL maintainer="bmanzari@redhat.com"
 
 ENV GO111MODULE=on
 RUN apk --no-cache add git
