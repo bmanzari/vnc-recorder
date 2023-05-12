@@ -11,5 +11,3 @@ RUN ls -lahR && go mod download && go build -o /vnc-recorder
 
 FROM jrottenberg/ffmpeg:4.1-alpine
 COPY --from=build-env /vnc-recorder /
-ENTRYPOINT ["/vnc-recorder"]
-CMD [""]
